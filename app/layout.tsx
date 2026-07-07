@@ -1,26 +1,36 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Geist } from "next/font/google"
+import { Geist, Pacifico } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "sonner"
 import PWAHandler from "@/components/PWAHandler"
 
+// ─── FUENTES ─────────────────────────────────────────────────────────────────
+// Geist: Fuente principal (texto normal)
+// Pacifico: Fuente cursiva para el nombre "Lolas"
 const geist = Geist({ 
   subsets: ["latin"],
   display: "swap" // Mejora performance
 })
 
+const pacifico = Pacifico({ 
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pacifico", // Variable CSS para usar en clases
+})
+
 export const metadata: Metadata = {
-  title: "Oliver Pizza",
-  description: "Un incomparable Sabor",
+  title: "Lola's Pizza",
+  description: "Un incomparable Sabor - Entrega a Domicilio GRATIS",
   generator: "v0.app",
   manifest: "/manifest.json",
-  applicationName: "Oliver Pizza",
+  applicationName: "Lola's Pizza",
   appleWebApp: {
     capable: true,
-    title: "Oliver Pizza",
+    title: "Lola's Pizza",
     statusBarStyle: "default",
   },
   formatDetection: {
@@ -77,13 +87,13 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Pizzería - Ordena en Línea",
+    title: "Lola's Pizza - Ordena en Línea",
     description: "Ordena las mejores pizzas directo a tu domicilio",
-    siteName: "Pizzería Online",
+    siteName: "Lola's Pizza",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pizzería - Ordena en Línea",
+    title: "Lola's Pizza - Ordena en Línea",
     description: "Ordena las mejores pizzas directo a tu domicilio",
   },
 }
@@ -140,7 +150,7 @@ export default function RootLayout({
         <meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="/mstile-310x310.png" />
       </head>
-      <body className={`${geist.className} font-sans antialiased`}>
+      <body className={`${geist.className} ${pacifico.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
           <Toaster position="top-center" richColors />

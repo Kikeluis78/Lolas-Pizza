@@ -122,10 +122,10 @@ export const especialidades3x1 = especialidades2x1
 export const paquetes = [
   {
     id: "pkg-1",
-    name: "MEGA OLIVER",
-    description: "Pizza cuadrada 4 Especiliades a escojer 38 x 52 cm.",
+    name: "PAKETAZO",
+    description: "Pizza Grande HAWAIANA + Pizza Grande PEPERONI",
     image: "/family-pizza-package-with-drinks.jpg",
-    price: 315,
+    price: 520,
   },
  
 ]
@@ -133,16 +133,25 @@ export const paquetes = [
 // Complementos
 export const complementos = {
   bebidas: [
-    { id: "refrescos", name: "Refresco", price: 25, description: "Coca-Cola 600ml" },
-     { id: "refrescos", name: "Refresco", price: 25, description: "Sprite 600ml" },
-      { id: "refrescos", name: "Refresco", price: 25, description: "Munded 600ml" },
-    { id: "refrescos", name: "Refresco", price: 55, description: "Munded 2lts" },
-      { id: "refrescos", name: "Refresco", price: 55, description: "Sprite 2lts" },
-       { id: "refrescos", name: "Refresco", price: 55, description: "Coca-Cola 2.5lts" },
+    { id: "refresco-coca-600", name: "Refresco", price: 25, description: "Coca-Cola 600ml" },
+    { id: "refresco-sprite-600", name: "Refresco", price: 25, description: "Sprite 600ml" },
+    { id: "refresco-mundet-600", name: "Refresco", price: 25, description: "Mundet 600ml" },
+    { id: "refresco-mundet-2l", name: "Refresco", price: 55, description: "Mundet 2lts" },
+    { id: "refresco-sprite-2l", name: "Refresco", price: 55, description: "Sprite 2lts" },
+    { id: "refresco-coca-2.5l", name: "Refresco", price: 55, description: "Coca-Cola 2.5lts" },
   ],
   spaguetti: [
-    { id: "Spaguetti", name: "Spaguetti", price:70, description: " Para 2 Personas Ingredientes: Salsa, carne molida y queso" },
-
+    { id: "spaguetti-bolognese", name: "Spaguetti", price: 75, description: "Salsa de quesos" },
+  ],
+   snacks: [
+    { id: "alitas-grandes", name: "Orden Alitas Grandes", price: 145, description: "10 Alitas salsa BBQ" },
+    { id: "alitas-chicas", name: "Orden Alitas Chicas", price: 80, description: "6 Alitas salsa BBQ" },
+    { id: "costillas-grandes", name: "Orden Costillas Grandes", price: 145, description: "10 Costillas salsa BBQ" },
+    { id: "costillas-chicas", name: "Orden Costillas Chicas", price: 80, description: "6 Costillas salsa BBQ" },
+    { id: "papas-sencillas", name: "Orden Papas Sencillas", price: 80, description: "Papas fritas" },
+    { id: "papas-grandes", name: "Orden Papas Grandes", price: 110, description: "Papas fritas grande" },
+    { id: "papas-especiales", name: "Papas Especiales", price: 90, description: "Queso mozzarela, queso chedar y tocino" },
+    { id: "papas-especiales-grandes", name: "Papas Especiales Grandes", price: 120, description: "Queso mozzarela, queso chedar y tocino" },
   ],
 }
 

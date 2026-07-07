@@ -1,7 +1,7 @@
 {
-  "name": "Oliver Pizza",
-  "short_name": "OliverPizza",
-  "description": "Un incomparable Sabor",
+  "name": "Lola's Pizza",
+  "short_name": "LolasPizza",
+  "description": "Un incomparable Sabor - Entrega a Domicilio GRATIS",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
@@ -15,8 +15,8 @@
   "screenshots": [],
   "shortcuts": [
     {
-      "name": "Oliver Pizza",
-      "short_name": "OliverPizza",
+      "name": "Lola's Pizza",
+      "short_name": "LolasPizza",
       "description": "Realiza un nuevo pedido",
       "url": "/ordenar",
       "icons": [{ "src": "/icon-96x96.png", "sizes": "96x96", "type": "image/png" }]

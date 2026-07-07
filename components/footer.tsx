@@ -141,7 +141,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} {pizzeriaConfig.nombre}. Todos los derechos reservados
+            © {new Date().getFullYear()} <span className="font-brand">Lola's Pizza</span>. Todos los derechos reservados
           </p>
           <p className="text-xs text-muted-foreground mt-2">Desarrollado por {pizzeriaConfig.desarrollador}</p>
         </div>

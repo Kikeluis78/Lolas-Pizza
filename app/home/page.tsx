@@ -19,7 +19,7 @@ export default function Home() {
                
               <h1 className="text-5xl md:text-7xl font-extrabold text-balance leading-tight">
                 <span className="bg-linear-to-r from-primary via-destructive to-secondary bg-clip-text text-transparent drop-shadow-lg">
-                  {pizzeriaConfig.nombre}
+                  <span className="font-brand">Lola's Pizza</span>
                 </span>
               </h1>
               <p className="text-xl md:text-2xl font-medium max-w-2xl mx-auto text-green-600">

@@ -46,6 +46,17 @@ export default function ComplementosPage() {
               </div>
             </section>
             )}
+
+            {features.snacks && complementos.snacks && (
+            <section>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-secondary">Snacks</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {complementos.snacks.map((item) => (
+                  <ComplementoCard key={item.id} complemento={item} />
+                ))}
+              </div>
+            </section>
+            )}
           </div>
         </div>
       </main>

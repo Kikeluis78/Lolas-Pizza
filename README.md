@@ -1,4 +1,4 @@
-# 🍕 Della Casa - Sistema de Pedidos de Pizzería
+# 🍕 Sistema de Pedidos de Pizzerías (Sistematizacion)
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kikeluis78s-projects/v0-shopping-cart-app)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/sWfCFFoeW7s)
@@ -9,7 +9,7 @@ Sistema completo de pedidos online para pizzerías locales en México. Plantilla
 
 ## ✨ Características Principales
 
-- 🍕 **Promociones 2x1** con personalización completa
+- 🍕 **Promociones 2x1-3x1** con personalización completa
 - 🎨 **Pizzas Mitad y Mitad** - combina especialidades
 - 📝 **Anotaciones personalizadas** - sin ingredientes, extras, etc.
 - 🛒 **Carrito de compras** con persistencia

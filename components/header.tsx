@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ShoppingCart, Settings, Pizza, Menu, X } from "lucide-react"
+import { ShoppingCart, Settings, Menu, X } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useCart } from "@/hooks/use-cart"
@@ -49,12 +50,16 @@ export function Header() {
     <>
       <header className="sticky top-0 z-50 w-full border-b-2 border-primary/20 bg-gradient-to-r from-background via-background to-primary/5 backdrop-blur-md shadow-lg">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
-          <Link href="/home" className="flex items-center gap-2 group">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-destructive flex items-center justify-center shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
-              <Pizza className="h-6 w-6 text-white" />
-            </div>
+          <Link href="/home" className="flex items-center gap-3 group">
+            <Image
+              src="/logoLolaspizza.png"
+              alt="Lola's Pizza Logo"
+              width={40}
+              height={40}
+              className="rounded-lg shadow-md group-hover:scale-110 transition-all duration-300"
+            />
             <span className="text-xl font-extrabold bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">
-              {pizzeriaConfig.nombre}
+              <span className="font-brand">Lola's Pizza</span>
             </span>
           </Link>
 
@@ -153,11 +158,15 @@ export function Header() {
                 className="flex items-center gap-2 group"
                 onClick={handleLinkClick}
               >
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-destructive flex items-center justify-center shadow-md">
-                  <Pizza className="h-6 w-6 text-white" />
-                </div>
+                <Image
+                  src="/logoLolaspizza.png"
+                  alt="Lola's Pizza Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-lg shadow-md"
+                />
                 <span className="text-xl font-extrabold bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">
-                  {pizzeriaConfig.nombre}
+                  <span className="font-brand">Lola's Pizza</span>
                 </span>
               </Link>
               <Button

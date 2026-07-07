@@ -62,6 +62,7 @@ interface PizzeriaConfig {
     paquetes: boolean;       // Carrusel de paquetes en /home y nav
     spaguetti: boolean;      // Sección spaguetti en /complementos
     bebidas: boolean;        // Sección bebidas en /complementos
+    snacks: boolean;         // Sección snacks en /complementos
     recompensas: boolean;    // Página /recompensas y link en nav
     vip: boolean;            // Página /vip y link en nav
     orillasRellenas: boolean; // Opción "Orilla de Queso" en modales de pizza
@@ -72,7 +73,7 @@ interface PizzeriaConfig {
 // Luego exportas con el tipo
 export const pizzeriaConfig: PizzeriaConfig = {
   // Información básica
-  nombre: "Lolas Pizza",
+  nombre: "Lola's Pizza",
   slogan: "Entrega a Domicilio  'GRATIS'",
   desarrollador: "Enrique Vargas",
   telefonos: ["557258-1593", "551665-6041", "556659-6934"],
@@ -166,11 +167,12 @@ export const pizzeriaConfig: PizzeriaConfig = {
   // ─── FEATURE FLAGS ───────────────────────────────────────────
   features: {
     promo2x1: false,
-    promo3x1:false,
+    promo3x1: false,
     paquetes: true,
     spaguetti: true,
     bebidas: true,
-    recompensas:false,
+    snacks: true,
+    recompensas: false,
     vip: false,
     orillasRellenas: true,
     mitadYMitad: true,

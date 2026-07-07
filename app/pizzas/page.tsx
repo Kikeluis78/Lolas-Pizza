@@ -61,7 +61,8 @@ export default function PizzasPage() {
 
                         {/* Main Cards */}
                         <div className="grid gap-6 max-w-6xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-                            {/* 2x1 Card */}
+                            {/* 2x1 Card - Condicional */}
+                            {pizzeriaConfig.features.promo2x1 && (
                             <Card className="group cursor-pointer hover:shadow-2xl transition-all duration-300 hover:scale-110 border-4 border-primary/60 bg-gradient-to-br from-card via-primary/10 to-accent/10 hover:border-primary/100 hover:shadow-glow">
                                 <CardHeader className="bg-gradient-to-r from-primary/20 via-accent/10 to-secondary/10 pb-6">
                                     <Badge className="w-fit mb-3 bg-gradient-to-r from-primary to-accent text-white font-bold">🔥 Promoción</Badge>
@@ -82,6 +83,7 @@ export default function PizzasPage() {
                                     </Button>
                                 </CardContent>
                             </Card>
+                            )}
 
                             {/* 3x1 Card - Condicional */}
                             {pizzeriaConfig.features.promo3x1 && (
@@ -112,7 +114,7 @@ export default function PizzasPage() {
                                 <CardHeader className="bg-gradient-to-r from-secondary/20 via-accent/10 to-primary/10 pb-6">
                                     <Badge className="w-fit mb-3 bg-gradient-to-r from-secondary to-accent text-white font-bold">🍕 Clásico</Badge>
                                     <CardTitle className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent">
-                                        Una Pizza
+                                      Especialidades
                                     </CardTitle>
                                     <p className="text-lg text-secondary font-semibold mt-2">Una pizza, Super Precio</p>
                                 </CardHeader>
